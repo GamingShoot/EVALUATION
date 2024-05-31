@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="evaluation.css" >
+    <script src="evaluation.js"></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1> Formulaire de prise de contact</h1>
+    <form id="contact-form" onsubmit="Submit(event)">
+        <!--Champ de texte-->
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom : </label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <!--Champ d'email-->
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" required><br><br>
+        <!--date de naissance-->
+        <label for="date">Date de naissance : </label>
+        <input type="date" id="date" name="date" required><br><br>
+                <!--Zone de texte-->
+        <label for="demande"> Formuler votre demande :</label><br>
+        <textarea id="demande" name="demande" rows="4" cols="50"></textarea><br><br>
+
+        <!--bouton de soumission-->
+        <!--Captcha-->
+        <p> Veuillez résoudre l'opération suivante :</p>
+        <span id="captcha"></span> =
+        <input type="number" id="captcha-result" required> <br><br>
+        <!--bouton de soumission-->
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
