@@ -129,4 +129,36 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: yellowgreen;
 }
+/* Style pour la vidéo YouTube */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 pour un lecteur vidéo */
+    overflow: hidden;
+    margin-bottom: 20px; /* Ajout d'un espacement en bas de la vidéo */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Largeur de la vidéo */
+    height: 50%;
+}
+
+/* Nouvelle division pour le texte à droite de la vidéo */
+.video-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%; /* Largeur du texte */
+    height: 50%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-text h3 {
+    margin-top: 0;
+}
 
